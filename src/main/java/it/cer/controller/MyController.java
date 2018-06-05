@@ -13,7 +13,7 @@ import org.springframework.web.portlet.ModelAndView;
 @RequestMapping(value = "/users")
 public class MyController {
 	
-//  http://localhost:8080/l159-web/users/list
+//  http://localhost:8080/PivotalCert/users/list
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model) {
 		System.out.println("DDD!");
@@ -21,14 +21,14 @@ public class MyController {
 	}
 	
 	
-	//  http://localhost:8080/l159-web/users/test/105
+	//  http://localhost:8080/PivotalCert/users/test/105
 	@RequestMapping(value = "/test/{\\d*}", method = RequestMethod.GET)
 	public String show(Model model) {
 		System.out.println("DDD! id:");
 		return "users/list";
 	}
 	
-	//  http://localhost:8080/l159-web/users/showUser?userId=105
+	//  http://localhost:8080/PivotalCert/users/showUser?userId=105
 	@RequestMapping(value = "/showUser", method = RequestMethod.GET)
 	public String showxx(Model model, @RequestParam(value = "userId", required = true) Long userId) {
 		System.out.println("DDD! id:");
@@ -36,7 +36,7 @@ public class MyController {
 	}
 	
 	
-	//  http://localhost:8080/l159-web/users/105
+	//  http://localhost:8080/PivotalCert/users/105
 	@RequestMapping(value = "/{userId}", method = RequestMethod.GET)
 	public ModelAndView showx(Model model, @PathVariable("userId") Long userId) {
 		System.out.println("DDD! id:");
