@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>PivotalCert</groupId>
+  <artifactId>PivotalCert</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+   <packaging>war</packaging> 
+  
+  
+  <properties>
+		<org.springframework.version>4.0.6.RELEASE</org.springframework.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+  
+  <dependencies>
+    
+<dependency>
+		 	<groupId>it.eng.siar</groupId>
+            <artifactId>ActivityTracker</artifactId>
+	        <version>2.1.0</version>
+	    </dependency> 
+	
+		<dependency>
+	        <groupId>org.aspectj</groupId>
+	        <artifactId>aspectjrt</artifactId>
+	        <version>1.7.0</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.aspectj</groupId>
+	        <artifactId>aspectjweaver</artifactId>
+	        <version>1.7.0</version>
+	    </dependency>
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15</artifactId>
+			<version>1.32</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			 <groupId>org.apache.ws.security</groupId>
+			 <artifactId>wss4j</artifactId>
+			 <version>1.5.6</version>
+			 <exclusions>
+				 <exclusion>
+					 <groupId>bouncycastle</groupId>
+					 <artifactId>bcprov-jdk14</artifactId>
+				 </exclusion>
+			 </exclusions>
+		 </dependency>
+
+		<!-- <dependency>
+			<groupId>it.eng.siar</groupId>
+			<artifactId>l159-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency> -->
+
+
+		<dependency>
+			<groupId>it.eng.siar</groupId>
+			<artifactId>CertificateUtils</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- Web application development utilities applicable to both Servlet and 
+			Portlet Environments (depends on spring-core, spring-beans, spring-context) 
+			Define this if you use Spring MVC, or wish to use Struts, JSF, or another 
+			web framework with Spring (org.springframework.web.*) -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<!-- Spring MVC for Servlet Environments (depends on spring-core, spring-beans, 
+			spring-context, spring-web) Define this if you use Spring MVC with a Servlet 
+			Container such as Apache Tomcat (org.springframework.web.servlet.*) -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<!-- Spring MVC for Portlet Environments (depends on spring-core, spring-beans, 
+			spring-context, spring-web) Define this if you use Spring MVC with a Portlet 
+			Container (org.springframework.web.portlet.*) -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc-portlet</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>3.2.5.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>3.2.5.RELEASE</version>
+		</dependency>
+
+	
+
+		<!-- Anagrafe tributaria PA client -->
+		<dependency>
+			<groupId>it.eng.siar</groupId>
+			<artifactId>anagrafeTributariaPAClient</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- usata da Anagrafe tributaria PA client -->
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+
+
+		<!-- lib Jackson JSON Mapper -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.10.19</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>it.eng.siar</groupId>
+		  <artifactId>AlfrescoClient</artifactId>
+		  <version>1.23.0</version>
+		</dependency>
+		
+	
+		
+		 <dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>			
+		</dependency>
+		
+		<dependency> 
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+		  	<artifactId>commons-lang3</artifactId>
+		  	<version>3.3.2</version>
+		</dependency> 
+		
+		
+			<!-- lib Tika per riconoscere e parsare file -->
+		<dependency>
+    		<groupId>org.apache.tika</groupId>
+    		<artifactId>tika-core</artifactId>
+    		<version>1.7</version>
+  		</dependency>
+  		
+		<dependency>
+			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-parsers</artifactId>
+			<version>1.7</version>			   
+			<exclusions>		    	
+		        <exclusion>
+		        	<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15</artifactId>					
+		        </exclusion>
+		    </exclusions>		    
+		</dependency>
+		
+		
+		
+		<!-- protocollazione -->
+		<dependency>
+    		<groupId>it.eng.siar</groupId>
+    		<artifactId>clientProtocolloRER</artifactId>
+    		<version>1.1.1</version>
+  		</dependency>
+		
+		<!-- Jasper -->
+		
+		 <dependency>
+    		<groupId>com.lowagie</groupId>
+    		<artifactId>itext</artifactId>
+    		<version>2.1.7</version>
+    		<exclusions>
+    			<exclusion>
+    				<artifactId>bcprov-jdk14</artifactId>
+    				<groupId>bouncycastle</groupId>
+    			</exclusion>
+    			<exclusion>
+    				<artifactId>bcmail-jdk14</artifactId>
+    				<groupId>bouncycastle</groupId>
+    			</exclusion>
+    			<exclusion>
+    				<artifactId>bctsp-jdk14</artifactId>
+    				<groupId>org.bouncycastle</groupId>
+    			</exclusion>
+    		</exclusions>
+		 </dependency> 
+		
+		  <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>6.1.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.lowagie</groupId>
+                    <artifactId>itext</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.olap4j</groupId>
+                      <artifactId>olap4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>xml-apis</groupId>
+				<artifactId>xml-apis</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency> 
+
+  </dependencies>
+  
+  
+  
+  
+</project> 
