@@ -14,11 +14,7 @@
   
   <dependencies>
     
-<dependency>
-		 	<groupId>it.eng.siar</groupId>
-            <artifactId>ActivityTracker</artifactId>
-	        <version>2.1.0</version>
-	    </dependency> 
+
 	
 		<dependency>
 	        <groupId>org.aspectj</groupId>
@@ -57,11 +53,7 @@
 		</dependency> -->
 
 
-		<dependency>
-			<groupId>it.eng.siar</groupId>
-			<artifactId>CertificateUtils</artifactId>
-			<version>1.0.1</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -120,11 +112,7 @@
 	
 
 		<!-- Anagrafe tributaria PA client -->
-		<dependency>
-			<groupId>it.eng.siar</groupId>
-			<artifactId>anagrafeTributariaPAClient</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+		
 
 		<!-- usata da Anagrafe tributaria PA client -->
 		<dependency>
@@ -159,11 +147,7 @@
 			<version>1.10.19</version>
 		</dependency>
 		
-		<dependency>
-		  <groupId>it.eng.siar</groupId>
-		  <artifactId>AlfrescoClient</artifactId>
-		  <version>1.23.0</version>
-		</dependency>
+		
 		
 	
 		
@@ -213,12 +197,7 @@
 		
 		
 		
-		<!-- protocollazione -->
-		<dependency>
-    		<groupId>it.eng.siar</groupId>
-    		<artifactId>clientProtocolloRER</artifactId>
-    		<version>1.1.1</version>
-  		</dependency>
+	
 		
 		<!-- Jasper -->
 		
