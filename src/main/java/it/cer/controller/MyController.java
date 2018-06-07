@@ -11,7 +11,7 @@ import org.springframework.web.portlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/users")
-public class MyController {
+public class MyController{
 	
 //  http://localhost:8080/PivotalCert/users/list
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
@@ -44,6 +44,17 @@ public class MyController {
 		return new ModelAndView("users/106");
 	}
 	
+	
+	
+//  http://localhost:8080/PivotalCert/users/xml
+	@RequestMapping(value = "/xml", method = RequestMethod.GET)
+	public String xXml(Model model) {
+		System.out.println("DDD!");
+		model.addAttribute("msg", "XmlViewResolver Demo");
+		return "list2";
+	}
+
+
 	
 
 

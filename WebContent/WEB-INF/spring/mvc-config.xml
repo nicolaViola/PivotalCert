@@ -18,9 +18,15 @@
         
         <context:component-scan base-package="it.cer" />
         
-        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 			<property name="prefix" value="/WEB-INF/jsp/"/>
 			<property name="suffix" value=".jsp"/>
-		</bean>
+		</bean>   -->
+		
         
+        <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+			<property name="location">
+				<value>/WEB-INF/spring-views.xml</value>
+	   	</property>
+		</bean>
  </beans>
