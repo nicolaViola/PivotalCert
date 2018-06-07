@@ -25,9 +25,7 @@
 		
         
         <bean class="org.springframework.web.servlet.view.XmlViewResolver">
-			<property name="location">
-				<value>/WEB-INF/spring-views.xml</value>
-	   		</property>
+			<property name="location" value="/WEB-INF/spring-views.xml" />
 	   		<property name="order" value="1" />
 		</bean>
  </beans>
