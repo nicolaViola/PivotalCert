@@ -3,6 +3,6 @@
 <title>Spring MVC</title>
 </head>
 	<body>
-	<h1>${msg}</h1>
+	<h1>${msg}</h1><br> 3
 	</body>
 </html> 

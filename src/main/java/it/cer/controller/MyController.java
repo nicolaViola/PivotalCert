@@ -17,7 +17,10 @@ public class MyController{
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model) {
 		System.out.println("DDD!");
-		return "users/list";
+		//return "users/list";
+		
+		model.addAttribute("msg", "XmlViewResolver Demoxxxxxxxxxxxxx");
+		return "list2";
 	}
 	
 	
