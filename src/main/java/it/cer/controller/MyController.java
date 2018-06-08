@@ -44,7 +44,7 @@ public class MyController{
 	public ModelAndView showx(Model model, @PathVariable("userId") Long userId) {
 		System.out.println("DDD! id:");
 		//return "test";
-		return new ModelAndView("users/106");
+		return new ModelAndView("users/list");
 	}
 	
 	
