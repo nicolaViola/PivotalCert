@@ -25,6 +25,7 @@
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 			<property name="prefix" value="/WEB-INF/jsp/"/>
 			<property name="suffix" value=".jsp"/>
+			<property name="requestContextAttribute" value="requestContext"/>
 		</bean>    
 		
         
