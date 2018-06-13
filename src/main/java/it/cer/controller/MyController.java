@@ -17,8 +17,6 @@ public class MyController{
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model) {
 		System.out.println("DDD!");
-		//return "users/list";
-		
 		model.addAttribute("msg", "XmlViewResolver Demoxxxxxxxxxxxxx");
 		return "list2";
 	}
@@ -50,7 +48,6 @@ public class MyController{
 	@RequestMapping(value = "/{userId}", method = RequestMethod.GET)
 	public ModelAndView showx(Model model, @PathVariable("userId") Long userId) {
 		System.out.println("DDD! id:");
-		//return "test";
 		return new ModelAndView("users/106");
 	}
 	
