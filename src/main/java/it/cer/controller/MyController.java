@@ -65,9 +65,9 @@ public class MyController{
 	}
 	
 	
-//  http://localhost:8080/PivotalCert/users/zzz
-	@RequestMapping(value = "zzz", method = RequestMethod.GET)
-	public void showzzz() {
+//  http://localhost:8080/PivotalCert/users/voidX
+	@RequestMapping(value = "voidX", method = RequestMethod.GET)
+	public void showvoidX() {
 		System.out.println("DDD!");
 	}
 	

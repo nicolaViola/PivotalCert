@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-zzz
+voidX. Il metodo del controller non ha nessun ritorno, è void. showvoidX()
 </body>
 </html>
