@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 /**
- * Questo controller non usa lo StereoType ma implementa per essere definito come Controller.
+ * Questo controller non usa lo StereoType ma implementa AbstractController per essere definito come Controller.
  * 
  * Questo bean è stato censito sul file di configurazione mvc-config.xml ed è stato anche censito
  * un bean architetturale org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping.
