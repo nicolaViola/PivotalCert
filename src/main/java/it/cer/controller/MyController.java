@@ -24,6 +24,13 @@ public class MyController{
 	}
 	
 	
+//  http://localhost:8080/PivotalCert/users/test2/105
+	@RequestMapping(value = "/test2/{id:\\d*}", method = RequestMethod.GET)
+	public String show2(Long id, Model model) {
+		System.out.println("DDD! id: " + id);
+		return "users/list";
+	}
+	
 	//  http://localhost:8080/PivotalCert/users/test/105
 	@RequestMapping(value = "/test/{\\d*}", method = RequestMethod.GET)
 	public String show(Model model) {
@@ -33,8 +40,8 @@ public class MyController{
 	
 	//  http://localhost:8080/PivotalCert/users/showUser?userId=105
 	@RequestMapping(value = "/showUser", method = RequestMethod.GET)
-	public String showxx(Model model, @RequestParam(value = "userId", required = true) Long userId) {
-		System.out.println("DDD! id:");
+	public String showxx(Model model, @RequestParam(value = "userId", required = true) Long userIdXXX) {
+		System.out.println("DDD! id: " + userIdXXX);
 		return "users/list";
 	}
 	
