@@ -63,6 +63,19 @@ public class MyController{
 		model.addAttribute("msg", "XmlViewResolver Demo");
 		return "list2";
 	}
+	
+	
+//  http://localhost:8080/PivotalCert/users/zzz
+	@RequestMapping(value = "zzz", method = RequestMethod.GET)
+	public void showzzz() {
+		System.out.println("DDD!");
+	}
+	
+//  http://localhost:8080/PivotalCert/users/nullX
+	@RequestMapping(value = "nullX", method = RequestMethod.GET)
+	public String shownullX() {
+		return null;
+	}
 
 
 	
