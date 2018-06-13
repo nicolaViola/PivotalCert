@@ -18,6 +18,10 @@
         
         <context:component-scan base-package="it.cer" />
         
+        <bean class = "org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+        <bean id="xmlController" class="it.cer.controller.XmlController" />
+		
+        
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 			<property name="prefix" value="/WEB-INF/jsp/"/>
 			<property name="suffix" value=".jsp"/>
