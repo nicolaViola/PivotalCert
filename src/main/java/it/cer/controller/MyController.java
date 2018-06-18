@@ -45,9 +45,9 @@ public class MyController{
 	
 	
 	//  http://localhost:8080/PivotalCert/users/105
-	@RequestMapping(value = "/{userId}", method = RequestMethod.GET)
-	public ModelAndView showx(Model model, @PathVariable("userId") Long userId) {
-		System.out.println("DDD! id:");
+	@RequestMapping(value = "/{Id}", method = RequestMethod.GET)
+	public ModelAndView showx(Model model, @PathVariable Long Id) {
+		System.out.println("DDD! id: " + Id);
 		return new ModelAndView("users/106");
 	}
 	
