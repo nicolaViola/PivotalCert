@@ -32,10 +32,7 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 	@Bean
 	public XmlViewResolver getViewResolverXml(){
 		XmlViewResolver resolver = new XmlViewResolver();
-		
 		resolver.setLocation(new FileSystemResource("C:/Users/Viola_n/git/PivotalCert/WebContent/WEB-INF/spring-views.xml"));
-		
-
 		resolver.setOrder(1);
 		return resolver;
 	}
