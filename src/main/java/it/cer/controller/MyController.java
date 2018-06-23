@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.portlet.ModelAndView;
 
+import it.cer.model.User;
+
 @Controller
 @RequestMapping(value = "/users")
 public class MyController{
@@ -18,6 +20,11 @@ public class MyController{
 	public String list(Model model) {
 		System.out.println("DDD!");
 		model.addAttribute("msg", "XmlViewResolver Demoxxxxxxxxxxxxx");
+		
+		User user = new User();
+		user.setName("nicW");
+		model.addAttribute("user", user);
+		
 		return "list2";
 	}
 	
