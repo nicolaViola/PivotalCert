@@ -45,8 +45,8 @@ public class MyConfigurer extends WebMvcConfigurerAdapter{
 		XmlViewResolver xvr = new XmlViewResolver();
 		
 		FileSystemResource cc = new FileSystemResource("/home/nicola/git/PivotalCert/WebContent/WEB-INF/spring-views.xml");
-		cc.exists();
 		xvr.setLocation(cc);
+		xvr.setOrder(1);
 		return xvr;
 	}
 	
@@ -56,10 +56,6 @@ public class MyConfigurer extends WebMvcConfigurerAdapter{
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
-	
-	
-	
-	
 	
 	
 	
