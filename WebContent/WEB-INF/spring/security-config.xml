@@ -7,10 +7,14 @@ http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <http auto-config="true" use-expressions="true">
+<intercept-url pattern="/users/list" access="hasRole('ROLE_ADMIN')"/>
+	<form-login authentication-failure-url="/auth/no" default-target-url="/auth/yes"/>
 
 
 	<!-- <custom-filter position="CONCURRENT_SESSION_FILTER" ref="customConcurrencyFilter" />  -->
-	<intercept-url pattern="/users/list" access="hasRole('ROLE_ADMIN')"/>
+	
+	
+	
 	
 </http>
 

@@ -16,7 +16,7 @@ import it.cer.model.User;
 public class MyController{
 	
 //  http://localhost:8080/PivotalCert/users/list
-	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	//@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model) {
 		System.out.println("DDD!");
 		model.addAttribute("msg", "XmlViewResolver Demoxxxxxxxxxxxxx");
